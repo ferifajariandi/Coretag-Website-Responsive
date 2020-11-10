@@ -1,0 +1,190 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+body
+{
+    background: #111;
+    overflow-x: hidden;
+
+}
+.nav 
+{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    opacity: .9;
+    overflow-x: hidden;
+    padding-top: 60px ;
+    transition: 0.7s;
+}
+.nav a
+{
+    display: block ;
+    padding: 20px;
+    font-size: 25px;
+    text-decoration: none;
+    color: #ccc;
+}
+.nav a:hover
+{
+    color: #fff;
+    transition: 0.4s;
+}
+.nav .close 
+{
+    position: absolute;
+    top: 0;
+    right: 22px;
+    margin-left: 50px;
+    font-size: 30px;
+}
+.slide a {
+    color: #000;
+    font-size: 30px;
+}
+#content
+{
+     padding: 20px;
+     transition: margin-left 0.7s;
+     overflow: hidden;
+     width: 100%;
+}
+section
+{
+    padding: 100px;
+    position: relative;
+}
+.header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000000;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    background: linear-gradient(to top, #111, transparent);
+}
+
+.banner .content 
+{
+    position: relative;
+    max-width: 900px;
+    text-align: center;
+    z-index: 1;
+}
+
+.banner .content h2
+{
+    color: #fff;
+    font-size: 3em;
+}
+.banner .content h2 .demak
+{
+    color: #4566f5;
+}
+.banner .content h2 .ayo
+{
+    color: #d73333;
+}
+.banner .content h2 .kui
+{
+    color: #edc53b;
+}
+.banner .content p
+{
+    color: #fff;
+    font-size: 1.5em;
+}
+.banner .content p .kab
+{
+    color: #e0000b;
+}
+
+.btn 
+{
+    position: relative;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 30px;
+    background: #fff;
+    color: #3498db;
+    text-decoration: none;
+    font-size: 15px;
+    border: 1px solid #3498db;
+}
+.bnt1
+{
+    border: 1px solid #3498db;
+    background: none;
+    padding: 10px 50px;
+    font-size: 20px;
+    color: #3498db;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.bnt1:hover
+{
+    color: #fff;
+}
+.bnt1::before
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #3498db;
+    z-index: -1;
+    transition: 0.8s;
+}
+.bnt1::before
+{
+    top: 0;
+    border-radius: 0 0 50% 50%;
+}
+.bnt1:hover::before
+{
+    height: 180%;
+}
+.fitBg 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
